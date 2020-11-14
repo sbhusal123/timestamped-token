@@ -51,6 +51,10 @@ class JWT(object):
     def get_data(self, cipher_text):
         """Returns and checks actual data after decrypting"""
         decrypted_token = self.fernet.decrypt(cipher_text)
+
+        if not decrypted_token:
+            return "Invalid token"
+
         data_dict = convert_string_to_dict(decrypted_token)
 
         if self._is_token_valid(data_dict):
