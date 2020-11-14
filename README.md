@@ -16,7 +16,7 @@ print(key)
 
 **ii. Create an object of JWT**
 ```python
-import JWT from jwt
+from jwt import JWT
 
 # Initialize JWT with time to live in second.
 jwt = JWT(ttl_in_second=2)
