@@ -1,5 +1,7 @@
-# Python JWT
-Python JWT implementation using symmetric Fernet encryption.
+# Python Timestamped TOken
+Python Timestamped token implementation using symmetric Fernet encryption.
+
+[WIP](this is not A jwt)
 
 ## 1. Installation:
 ``pip install -r requirements.txt``
